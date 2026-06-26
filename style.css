@@ -80,6 +80,7 @@ textarea {
 button {
   padding: 10px 20px;
   cursor: pointer;
+  /* margin-right: 320px; */
 }
 
 button:hover,
@@ -98,4 +99,57 @@ footer {
     display: block;
     margin: 10px;
   }
+}
+
+:root {
+  --bg-color: white;
+  --text-color: black;
+}
+
+.dark {
+  --bg-color: #121212;
+  --text-color: white;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+
+/* Mobile */
+.projects {
+  grid-template-columns: 1fr;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .projects {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+li{
+    color: black;
+}
+
+.bla{
+    color: black;
+}
+
+#jio{
+    color: black;
 }
